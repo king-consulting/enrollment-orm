@@ -1,0 +1,22 @@
+{
+  "name": "king-consulting/enrollment-orm",
+  "type" : "library",
+  "homepage": "https://github.com/king-consulting/enrollment-orm",
+  "description": "ORM for enrollment database",
+  "minimum-stability": "dev",
+  "repositories": [
+  ],
+  "autoload": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "require": {
+    "monolog/monolog": "^1.15",
+    "doctrine/orm": "^2.6",
+    "symfony/yaml": "^4.1",
+    "doctrine/migrations": "^1.8"
+  },
+  "suggest": {
+  }
+}
