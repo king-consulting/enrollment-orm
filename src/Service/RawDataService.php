@@ -25,7 +25,9 @@ class RawDataService {
     }
     catch (Exception $e) {
       print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
     }
+    return true;
   }
 }
 
