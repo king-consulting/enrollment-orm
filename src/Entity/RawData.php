@@ -15,7 +15,7 @@ class RawData
     /**
      * @var string
      */
-    private $CDC_CODE;
+    private $CDS_CODE;
 
     /**
      * @var string
@@ -150,9 +150,9 @@ class RawData
      *
      * @return RawData
      */
-    public function setCDCCODE($cDCCODE)
+    public function setCDSCODE($cDCCODE)
     {
-        $this->CDC_CODE = $cDCCODE;
+        $this->CDS_CODE = $cDCCODE;
 
         return $this;
     }
@@ -162,9 +162,9 @@ class RawData
      *
      * @return string
      */
-    public function getCDCCODE()
+    public function getCDSCODE()
     {
-        return $this->CDC_CODE;
+        return $this->CDS_CODE;
     }
 
     /**
