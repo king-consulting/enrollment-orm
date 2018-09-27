@@ -1,6 +1,6 @@
 <?php
 
-namespace KingConsulting\Entity;
+namespace Entity;
 
 /**
  * RawData
@@ -15,7 +15,7 @@ class RawData
     /**
      * @var string
      */
-    private $CDS_CODE;
+    private $CDC_CODE;
 
     /**
      * @var string
@@ -150,9 +150,9 @@ class RawData
      *
      * @return RawData
      */
-    public function setCDSCODE($cDCCODE)
+    public function setCDCCODE($cDCCODE)
     {
-        $this->CDS_CODE = $cDCCODE;
+        $this->CDC_CODE = $cDCCODE;
 
         return $this;
     }
@@ -162,9 +162,9 @@ class RawData
      *
      * @return string
      */
-    public function getCDSCODE()
+    public function getCDCCODE()
     {
-        return $this->CDS_CODE;
+        return $this->CDC_CODE;
     }
 
     /**

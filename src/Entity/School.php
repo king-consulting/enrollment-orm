@@ -1,6 +1,6 @@
 <?php
 
-namespace KingConsulting\Entity;
+namespace Entity;
 
 /**
  * School

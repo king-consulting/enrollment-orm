@@ -17,7 +17,7 @@ class County
     /**
      * @Id
      * @GeneratedValue
-     * @Column(type="smallint")
+     * @Column(type="integer")
      */
     protected $id;
 

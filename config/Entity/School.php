@@ -17,7 +17,7 @@ class School
     /**
      * @Id
      * @GeneratedValue
-     * @Column(type="smallint")
+     * @Column(type="integer")
      */
     private $id;
 
