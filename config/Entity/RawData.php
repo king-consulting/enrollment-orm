@@ -17,7 +17,7 @@ class RawData
     /**
      * @Column(type="string")
      */
-    private $CDC_CODE;
+    private $CDS_CODE;
 
     /**
      * @Column(type="string")

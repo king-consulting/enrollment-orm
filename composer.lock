@@ -313,12 +313,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "6891e73fb12209efefc9bac332f327005cee3650"
+                "reference": "9355a2badac12ead9ed581166c18e4ea07117679"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/6891e73fb12209efefc9bac332f327005cee3650",
-                "reference": "6891e73fb12209efefc9bac332f327005cee3650",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/9355a2badac12ead9ed581166c18e4ea07117679",
+                "reference": "9355a2badac12ead9ed581166c18e4ea07117679",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +388,7 @@
                 "php",
                 "queryobject"
             ],
-            "time": "2018-09-26 17:20:24"
+            "time": "2018-09-27 23:17:22"
         },
         {
             "name": "doctrine/event-manager",
@@ -892,12 +892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/reflection.git",
-                "reference": "ca1b0e41375495253d58244fd9acd0c2db9f2524"
+                "reference": "12b6dfcab694f3fca8607e90568864e01818b6ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/reflection/zipball/ca1b0e41375495253d58244fd9acd0c2db9f2524",
-                "reference": "ca1b0e41375495253d58244fd9acd0c2db9f2524",
+                "url": "https://api.github.com/repos/doctrine/reflection/zipball/12b6dfcab694f3fca8607e90568864e01818b6ed",
+                "reference": "12b6dfcab694f3fca8607e90568864e01818b6ed",
                 "shasum": ""
             },
             "require": {
@@ -962,7 +962,7 @@
                 "reflection",
                 "static"
             ],
-            "time": "2018-09-26 01:29:03"
+            "time": "2018-09-27 23:09:42"
         },
         {
             "name": "monolog/monolog",
