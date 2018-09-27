@@ -3,9 +3,9 @@
 namespace KingConsulting\Entity;
 
 /**
- * County
+ * Factory
  */
-class County
+class Factory
 {
     /**
      * @var int
@@ -45,7 +45,7 @@ class County
      *
      * @param string $name
      *
-     * @return County
+     * @return Factory
      */
     public function setName($name)
     {
@@ -69,7 +69,7 @@ class County
      *
      * @param \Entity\District $district
      *
-     * @return County
+     * @return Factory
      */
     public function addDistrict(\Entity\District $district)
     {

@@ -8,14 +8,15 @@ class RawDataService {
 
   public function __construct($entityManager)
   {
-    $this->entityManger = $entityManger;
+    $this->entityManager = $entityManager;
   }
 
   public function addRow($year, $header, $line)
   {
     $values = explode("\t", trim($line));
     $values = array_map('addslashes', $values);
-    $insert = "INSERT INTO EnrollmentRawData (YEAR," . join(',', $header) . ") VALUES ('$year', '" . join("','", $values) . "');\n";
+    $insert = "INSERT INTO RawData (YEAR," . join(',', $header) . ") VALUES ('$year', '" . join("','", $values) . "');\n";
+    #print $insert . "\n";
 
     try
     {
