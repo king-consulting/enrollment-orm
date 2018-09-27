@@ -1,6 +1,6 @@
 <?php
 
-namespace Service;
+namespace KingConsulting\Service;
 
 class RawDataService {
 
