@@ -29,3 +29,4 @@ $conn = array(
 // obtaining the entity manager
 $entityManager = EntityManager::create($conn, $config);
 
+$RawDataService = new RawDataService($entityManager);
