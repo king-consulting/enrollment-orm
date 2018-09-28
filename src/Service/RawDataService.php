@@ -60,5 +60,22 @@ class RawDataService {
     }
   }
 
+  public function updateRowsWithEmptyValues($cdsCode, $info)
+  {
+    try
+    {
+      $update = "UPDATE RawData SET COUNTY = '" . addslashes($info['COUNTY']) . "', DISTRICT = '" . addslashes($info['DISTRICT']) . "', SCHOOL = '" . addslashes($info['SCHOOL']) ."' WHERE CDS_CODE = '$cdsCode' AND COUNTY = ''";
+      #print $update."\n";
+
+      $stmt = $this->entityManager->getConnection()->prepare($update);
+      $stmt->execute();
+    }
+    catch (Exception $e) {
+      print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
+    }
+    return true;
+  }
+
 }
 
