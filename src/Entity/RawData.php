@@ -15,32 +15,32 @@ class RawData
     /**
      * @var string
      */
-    private $CDS_CODE;
+    private $CDS_CODE = '';
 
     /**
      * @var string
      */
-    private $COUNTY;
+    private $COUNTY = '';
 
     /**
      * @var string
      */
-    private $DISTRICT;
+    private $DISTRICT = '';
 
     /**
      * @var string
      */
-    private $SCHOOL;
+    private $SCHOOL = '';
 
     /**
      * @var string
      */
-    private $ETHNIC;
+    private $ETHNIC = '';
 
     /**
      * @var string
      */
-    private $GENDER;
+    private $GENDER = '';
 
     /**
      * @var int

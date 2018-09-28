@@ -15,34 +15,34 @@ class RawData
     private $id;
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", options={"default" : ""})
      */
-    private $CDS_CODE;
+    private $CDS_CODE = '';
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", options={"default" : ""})
      */
-    private $COUNTY;
+    private $COUNTY = '';
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", options={"default" : ""})
      */
-    private $DISTRICT;
+    private $DISTRICT = '';
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", options={"default" : ""})
      */
-    private $SCHOOL;
+    private $SCHOOL = '';
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", options={"default" : ""})
      */
-    private $ETHNIC;
+    private $ETHNIC = '';
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", options={"default" : ""})
      */
-    private $GENDER;
+    private $GENDER = '';
 
     /**
      * @Column(type="integer")
