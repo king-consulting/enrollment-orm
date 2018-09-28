@@ -81,7 +81,7 @@ class RawDataService {
   {
     try
     {
-      $stmt = $this->entityManager->getConnection()->prepare("SELECT DISTINCT YEAR FROM RawData WHERE COUNTY != '' ORDER BY YEAR DESC");
+      $stmt = $this->entityManager->getConnection()->prepare("SELECT DISTINCT YEAR FROM RawData WHERE COUNTY != ''");
       $stmt->execute();
       return $stmt->fetchAll();
     }
