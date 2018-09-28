@@ -2,7 +2,7 @@
 
 /**
  * @Entity
- * @Table(name="SchoolGradeCounts")
+ * @Table(name="SchoolGradeCounts",indexes={@Index(name="year_idx", columns={"year"})})
  */
 class SchoolGradeCount
 {

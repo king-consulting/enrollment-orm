@@ -2,7 +2,7 @@
 
 /**
  * @Entity
- * @Table(name="Schools")
+ * @Table(name="Schools",indexes={@Index(name="name_idx", columns={"name"}), @Index(name="cds_code_idx", columns={"cds_code"})})
  */
 class School
 {

@@ -2,7 +2,7 @@
 
 /**
  * @Entity
- * @Table(name="RawData")
+ * @Table(name="RawData",indexes={@Index(name="cds_code_idx", columns={"CDS_CODE"}), @Index(name="county_idx", columns={"COUNTY"}), @Index(name="district_idx", columns={"DISTRICT"}), @Index(name="school_idx", columns={"SCHOOL"})})
  */
 class RawData
 {
