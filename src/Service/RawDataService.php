@@ -2,6 +2,8 @@
 
 namespace KingConsulting\Service;
 
+use Doctrine\ORM\Query\ResultSetMapping;
+
 class RawDataService {
 
   private $entityManager;
@@ -29,5 +31,34 @@ class RawDataService {
     }
     return true;
   }
+
+  public function findRowsWithEmptyValues()
+  {
+    try
+    {
+      $stmt = $this->entityManager->getConnection()->prepare('SELECT DISTINCT CDS_CODE, COUNTY, DISTRICT, SCHOOL FROM RawData WHERE COUNTY = ""');
+      $stmt->execute();
+      return $stmt->fetchAll();
+    }
+    catch (Exception $e) {
+      print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
+    }
+  }
+
+  public function findRowsWithNoEmptyValues()
+  {
+    try
+    {
+      $stmt = $this->entityManager->getConnection()->prepare('SELECT DISTINCT CDS_CODE, COUNTY, DISTRICT, SCHOOL FROM RawData WHERE COUNTY != ""');
+      $stmt->execute();
+      return $stmt->fetchAll();
+    }
+    catch (Exception $e) {
+      print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
+    }
+  }
+
 }
 
