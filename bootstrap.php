@@ -23,8 +23,8 @@ $conn = array(
 // the connection configuration
 $conn = array(
   'driver'   => 'pdo_mysql',
-  'user'     => 'root',
-  'password' => '&$#$JFl23asfjA)8wfLFr29&^',
+  'user'     => '__USER__',
+  'password' => '__PASSWORD__',
   'dbname'   => 'Enrollment',
 );
 
