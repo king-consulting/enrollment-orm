@@ -150,5 +150,48 @@ ORDER BY SCHOOL
     }
   }
 
+  public function runRawQuery($query)
+  {
+    try
+    {
+      $stmt = $this->entityManager->getConnection()->prepare($query);
+      $stmt->execute();
+    }
+    catch (Exception $e) {
+      print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
+    }
+    return true;
+  }
+
+  public function runSelectQuery($query)
+  {
+    try
+    {
+      $stmt = $this->entityManager->getConnection()->prepare($query);
+      $stmt->execute();
+      return $stmt->fetchAll();
+    }
+    catch (Exception $e) {
+      print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
+    }
+    return true;
+  }
+
+  public function runInsertQuery($query)
+  {
+    try
+    {
+      $stmt = $this->entityManager->getConnection()->prepare($query);
+      $stmt->execute();
+      return $this->entityManager->getConnection()->lastInsertId();
+    }
+    catch (Exception $e) {
+      print 'Caught exception: ' .  $e->getMessage() . "\n";
+      return false;
+    }
+    return true;
+  }
 }
 
